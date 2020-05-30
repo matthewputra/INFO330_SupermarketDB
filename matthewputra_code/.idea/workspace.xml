@@ -18,7 +18,38 @@
     <option name="HIDDEN_KINDS">
       <set />
     </option>
-    <expand />
+    <expand>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="jdbc:sqlserver://IS-HAY10.ischool.uw.edu \MSSQLSERVER :1433" type="feb32156:DbDataSourceImpl" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="jdbc:sqlserver://IS-HAY10.ischool.uw.edu \MSSQLSERVER :1433" type="feb32156:DbDataSourceImpl" />
+        <item name="INFO330_PROJ_A13: database" type="ccb7ac2a:MsImplModel$Database" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="jdbc:sqlserver://IS-HAY10.ischool.uw.edu \MSSQLSERVER :1433" type="feb32156:DbDataSourceImpl" />
+        <item name="INFO330_PROJ_A13: database" type="ccb7ac2a:MsImplModel$Database" />
+        <item name="dbo: schema" type="2865ee2e:MsImplModel$Schema" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="jdbc:sqlserver://IS-HAY10.ischool.uw.edu \MSSQLSERVER :1433" type="feb32156:DbDataSourceImpl" />
+        <item name="INFO330_PROJ_A13: database" type="ccb7ac2a:MsImplModel$Database" />
+        <item name="dbo: schema" type="2865ee2e:MsImplModel$Schema" />
+        <item name="tables" type="d4e8921:DatabaseStructure$FamilyGroup" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="jdbc:sqlserver://IS-HAY10.ischool.uw.edu \MSSQLSERVER :1433" type="feb32156:DbDataSourceImpl" />
+        <item name="INFO330_PROJ_A13: database" type="ccb7ac2a:MsImplModel$Database" />
+        <item name="dbo: schema" type="2865ee2e:MsImplModel$Schema" />
+        <item name="tables" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="tblSupplier: table" type="63ab2ba1:MsImplModel$Table" />
+      </path>
+    </expand>
     <select />
   </component>
   <component name="ProjectId" id="1ce5ByyfIGnoTowhKj8Y9ZmYAaY" />
@@ -33,11 +64,57 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand>
+              <path>
+                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+                <item name="jdbc:sqlserver://IS-HAY10.ischool.uw.edu \MSSQLSERVER :1433: root" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+              </path>
+              <path>
+                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+                <item name="jdbc:sqlserver://IS-HAY10.ischool.uw.edu \MSSQLSERVER :1433: root" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+                <item name="com.intellij.database.console.session.MessageBusSession@44ee3ef3" type="9fbbdea:ServiceModel$ServiceNode" />
+              </path>
+            </expand>
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
   <component name="WindowStateProjectService">
     <state x="320" y="115" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1590876187925">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="320" y="115" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1440.900@0.0.1440.900" timestamp="1590876187925" />
+    <state width="987" height="252" key="GridCell.Tab.0.bottom" timestamp="1590879151562">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="987" height="252" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1590879151562" />
+    <state width="987" height="252" key="GridCell.Tab.0.center" timestamp="1590879151561">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="987" height="252" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1590879151561" />
+    <state width="987" height="252" key="GridCell.Tab.0.left" timestamp="1590879151560">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="987" height="252" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1590879151560" />
+    <state width="987" height="252" key="GridCell.Tab.0.right" timestamp="1590879151561">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="987" height="252" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1590879151561" />
+    <state width="239" height="457" key="HiddenNamespacesPopup" timestamp="1590876944650">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="239" height="457" key="HiddenNamespacesPopup/0.0.1440.900@0.0.1440.900" timestamp="1590876944650" />
+    <state x="449" y="140" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog" timestamp="1590879111808">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="449" y="140" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog/0.0.1440.900@0.0.1440.900" timestamp="1590879111808" />
     <state x="397" y="282" key="com.intellij.ide.util.TipDialog" timestamp="1590876261860">
       <screen x="0" y="0" width="1440" height="900" />
     </state>

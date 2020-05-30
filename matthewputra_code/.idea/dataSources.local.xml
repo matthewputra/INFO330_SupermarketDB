@@ -11,8 +11,8 @@
       <user-name>Info330</user-name>
       <schema-mapping>
         <introspection-scope>
-          <node kind="database" qname="@">
-            <node kind="schema" qname="@" />
+          <node kind="database" qname="INFO330_PROJ_A13">
+            <node kind="schema" negative="1" />
           </node>
         </introspection-scope>
       </schema-mapping>
