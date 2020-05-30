@@ -171,7 +171,7 @@ CREATE TABLE tblProductPrice(
 --tblProductType
 CREATE TABLE tblProductType(
     ProductTypeID INT IDENTITY(1, 1) PRIMARY KEY,
-    ProductTypeName VARCHAR(30) NOT NULL,
+    ProductTypeName VARCHAR(50) NOT NULL,
     ProductTypeDescription VARCHAR(100) NOT NULL
 )
 
@@ -222,6 +222,6 @@ CREATE TABLE tblSupplier(
     SupplierAddress VARCHAR(100) NOT NULL,
     SupplierState VARCHAR(20) NOT NULL,
     SupplierCity VARCHAR(20) NOT NULL,
-    SupplierZipcode INT NOT NULL,
-    SupplierPhone INT NOT NULL
+    SupplierZipcode VARCHAR(12) NOT NULL,
+    SupplierPhone VARCHAR(10) NOT NULL
 )
