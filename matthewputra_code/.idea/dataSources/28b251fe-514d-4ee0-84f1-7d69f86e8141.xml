@@ -1296,7 +1296,7 @@
     </schema>
     <schema id="324" parent="44" name="dbo">
       <ObjectId>1</ObjectId>
-      <IntrospectionTimestamp>2020-05-30.09:28:04.253</IntrospectionTimestamp>
+      <IntrospectionTimestamp>2020-05-30.10:01:03.033</IntrospectionTimestamp>
       <Current>1</Current>
     </schema>
     <schema id="325" parent="44" name="guest">
@@ -1434,7 +1434,7 @@
     <table id="352" parent="324" name="tblEmployee">
       <ObjectId>18099105</ObjectId>
       <CreatedTimestamp>2020-05-17.06:40:45.583</CreatedTimestamp>
-      <ModifiedTimestamp>2020-05-17.06:42:47.587</ModifiedTimestamp>
+      <ModifiedTimestamp>2020-05-30.10:01:02.773</ModifiedTimestamp>
     </table>
     <table id="353" parent="324" name="tblEmployeeDepartment">
       <ObjectId>722101613</ObjectId>
@@ -17654,7 +17654,7 @@
     </column>
     <column id="2947" parent="352" name="EmployeeZipcode">
       <Position>11</Position>
-      <DataType>int|0s</DataType>
+      <DataType>varchar(12 char)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
     <column id="2948" parent="352" name="EmployeeEmail">
@@ -17664,7 +17664,7 @@
     </column>
     <column id="2949" parent="352" name="EmployeePhone">
       <Position>13</Position>
-      <DataType>int|0s</DataType>
+      <DataType>varchar(10 char)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
     <index id="2950" parent="352" name="PK__tblEmplo__7AD04FF15870012C">

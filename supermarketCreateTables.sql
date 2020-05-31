@@ -124,9 +124,9 @@ CREATE TABLE tblEmployee(
     EmployeeAddress VARCHAR(100) NOT NULL,
     EmployeeCity VARCHAR(20) NOT NULL,
     EmployeeState VARCHAR(20) NOT NULL,
-    EmployeeZipcode INT NOT NULL,
+    EmployeeZipcode VALUE (12) NOT NULL,
     EmployeeEmail VARCHAR(50) NOT NULL,
-    EmployeePhone INT NOT NULL
+    EmployeePhone VARCHAR(10) NOT NULL
 )
 
 --tblEmployeeDepartment
