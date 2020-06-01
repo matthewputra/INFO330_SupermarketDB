@@ -1,21 +1,19 @@
 -- Compute Column 1
--- Give the product that has the highest quantity in each store
-CREATE FUNCTION fn_GetMostProduct(@StoreID INT)
-RETURNS VARCHAR(100)
+--Measure the total number of orders each customer completed
+CREATE FUNCTION fn_totalorder3(@pk int)
+RETURNS INT 
 AS
-    BEGIN
-        DECLARE @Quantity INT, @Product VARCHAR(100), @Ret VARCHAR(100)
-        SET @Quantity = (SELECT MAX(SP.StoreProductQuantity)
-                                    FROM tblStoreProduct AS SP
-                                    WHERE SP.StoreID = @StoreID)
-        SET @Product = (SELECT TOP 1 P.ProductName
-                                    FROM tblStoreProduct AS SP
-                                    JOIN tblProduct AS P ON SP.ProductID = P.ProductID
-                                    WHERE SP.StoreID = @StoreID AND
-                                          SP.StoreProductQuantity = @Quantity)
-        SET @Ret = CONCAT(@Product, '-', @Quantity)
-        RETURN @Ret
-    END
-GO
-ALTER TABLE dbo.tblStore
-ADD highestQuantityProduct AS (dbo.fn_GetMostProduct(StoreID));
+BEGIN 
+	DECLARE @RET INT =
+	(SELECT COUNT(O.ORDERID)
+	FROM tblCUSTOMER C 
+	JOIN tblORDER O ON C.CUSTOMERID = O.CUSTOMERID 
+
+	WHERE C.CUSTOMERID = @pk 
+	)
+	return @ret 
+	end 
+	go
+
+ALTER TABLE tblCUSTOMER
+ADD NumOrders AS (dbo.fn_totalorder3(CUSTOMERID))
