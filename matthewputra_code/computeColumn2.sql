@@ -4,15 +4,16 @@ CREATE FUNCTION fn_GetMostProductSupplied(@SupplierID INT)
 RETURNS VARCHAR(100)
 AS
     BEGIN
-        DECLARE @Quantity INT, @Ret VARCHAR(100)
+        DECLARE @Quantity INT, @Product VARCHAR(100), @Ret VARCHAR(100)
             SET @Quantity = (SELECT MAX(PS.ProductSupplyQuantity)
                                 FROM tblProductSupply AS PS
                                 WHERE PS.SupplierID = @SupplierID)
-            SET @Ret = (SELECT TOP 1 P.ProductName
+            SET @Product = (SELECT TOP 1 P.ProductName
                             FROM tblProductSupply AS PS
                             JOIN tblProduct AS P ON PS.ProductID = P.ProductID
                             WHERE PS.SupplierID = @SupplierID AND
                                   PS.ProductSupplyQuantity = @Quantity)
+            SET @Ret = CONCAT(@Product, '-', @Quantity)
         RETURN @Ret
     END
 GO
