@@ -7,5 +7,5 @@ BEGIN TRAN populateStatus
     INSERT INTO tblStatus(StatusName)
     VALUES ('ordered')
     INSERT INTO tblStatus(StatusName)
-    VALUES ('arrived')
+    VALUES ('complete')
 COMMIT TRAN populateStatus
