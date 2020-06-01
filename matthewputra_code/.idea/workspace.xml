@@ -69,11 +69,6 @@
               <path>
                 <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
                 <item name="jdbc:sqlserver://IS-HAY10.ischool.uw.edu \MSSQLSERVER :1433: root" type="7427dc5b:ServiceModel$ServiceGroupNode" />
-                <item name="com.intellij.database.console.session.MessageBusSession@59fa3c80" type="9fbbdea:ServiceModel$ServiceNode" />
-              </path>
-              <path>
-                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
-                <item name="jdbc:sqlserver://IS-HAY10.ischool.uw.edu \MSSQLSERVER :1433: root" type="7427dc5b:ServiceModel$ServiceGroupNode" />
                 <item name="com.intellij.database.console.session.MessageBusSession@44ee3ef3" type="9fbbdea:ServiceModel$ServiceNode" />
               </path>
             </expand>
@@ -88,22 +83,22 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="320" y="115" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1440.900@0.0.1440.900" timestamp="1590876187925" />
-    <state width="987" height="252" key="GridCell.Tab.0.bottom" timestamp="1590999293558">
+    <state width="958" height="245" key="GridCell.Tab.0.bottom" timestamp="1591003132850">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="987" height="252" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1590999293558" />
-    <state width="987" height="252" key="GridCell.Tab.0.center" timestamp="1590999293557">
+    <state width="958" height="245" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1591003132850" />
+    <state width="958" height="245" key="GridCell.Tab.0.center" timestamp="1591003132849">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="987" height="252" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1590999293557" />
-    <state width="987" height="252" key="GridCell.Tab.0.left" timestamp="1590999293556">
+    <state width="958" height="245" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1591003132849" />
+    <state width="958" height="245" key="GridCell.Tab.0.left" timestamp="1591003132848">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="987" height="252" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1590999293556" />
-    <state width="987" height="252" key="GridCell.Tab.0.right" timestamp="1590999293557">
+    <state width="958" height="245" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1591003132848" />
+    <state width="958" height="245" key="GridCell.Tab.0.right" timestamp="1591003132849">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="987" height="252" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1590999293557" />
+    <state width="958" height="245" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1591003132849" />
     <state width="239" height="457" key="HiddenNamespacesPopup" timestamp="1590976656884">
       <screen x="0" y="0" width="1440" height="900" />
     </state>

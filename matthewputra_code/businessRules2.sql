@@ -19,3 +19,7 @@ GO
 ALTER TABLE tblStoreProduct
 ADD CONSTRAINT CK_NoStoreOver500Tobacco
 CHECK (dbo.fn_CheckTobaccoQuantity() = 0);
+
+-- Test code
+INSERT INTO tblStoreProduct(ProductID, StoreID, StoreProductQuantity)
+VALUES (210, 12, 501)
