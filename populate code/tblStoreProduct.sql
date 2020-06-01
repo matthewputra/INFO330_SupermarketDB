@@ -1,10 +1,3 @@
-use INFO330_PROJ_A13
-SELECT * FROM tblStore
-
-SELECT * FROM tblProduct
-
-SELECT * FROM tblStoreProduct
-
 insert into tblStoreProduct (ProductID, StoreID, StoreProductQuantity) values (73, 16, 186);
 insert into tblStoreProduct (ProductID, StoreID, StoreProductQuantity) values (113, 14, 461);
 insert into tblStoreProduct (ProductID, StoreID, StoreProductQuantity) values (285, 11, 183);
