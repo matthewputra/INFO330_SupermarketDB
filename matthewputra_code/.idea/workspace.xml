@@ -28,6 +28,19 @@
         <item name="jdbc:sqlserver://IS-HAY10.ischool.uw.edu \MSSQLSERVER :1433" type="feb32156:DbDataSourceImpl" />
         <item name="INFO330_PROJ_A13: database" type="ccb7ac2a:MsImplModel$Database" />
       </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="jdbc:sqlserver://IS-HAY10.ischool.uw.edu \MSSQLSERVER :1433" type="feb32156:DbDataSourceImpl" />
+        <item name="INFO330_PROJ_A13: database" type="ccb7ac2a:MsImplModel$Database" />
+        <item name="dbo: schema" type="2865ee2e:MsImplModel$Schema" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="jdbc:sqlserver://IS-HAY10.ischool.uw.edu \MSSQLSERVER :1433" type="feb32156:DbDataSourceImpl" />
+        <item name="INFO330_PROJ_A13: database" type="ccb7ac2a:MsImplModel$Database" />
+        <item name="dbo: schema" type="2865ee2e:MsImplModel$Schema" />
+        <item name="tables" type="d4e8921:DatabaseStructure$FamilyGroup" />
+      </path>
     </expand>
     <select />
   </component>
@@ -70,22 +83,22 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="320" y="115" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1440.900@0.0.1440.900" timestamp="1590876187925" />
-    <state width="987" height="252" key="GridCell.Tab.0.bottom" timestamp="1590971046413">
+    <state width="987" height="252" key="GridCell.Tab.0.bottom" timestamp="1590986339891">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="987" height="252" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1590971046413" />
-    <state width="987" height="252" key="GridCell.Tab.0.center" timestamp="1590971046322">
+    <state width="987" height="252" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1590986339891" />
+    <state width="987" height="252" key="GridCell.Tab.0.center" timestamp="1590986339890">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="987" height="252" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1590971046322" />
-    <state width="987" height="252" key="GridCell.Tab.0.left" timestamp="1590971046321">
+    <state width="987" height="252" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1590986339890" />
+    <state width="987" height="252" key="GridCell.Tab.0.left" timestamp="1590986339889">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="987" height="252" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1590971046321" />
-    <state width="987" height="252" key="GridCell.Tab.0.right" timestamp="1590971046322">
+    <state width="987" height="252" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1590986339889" />
+    <state width="987" height="252" key="GridCell.Tab.0.right" timestamp="1590986339891">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="987" height="252" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1590971046322" />
+    <state width="987" height="252" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1590986339891" />
     <state width="239" height="457" key="HiddenNamespacesPopup" timestamp="1590976656884">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
