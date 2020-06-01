@@ -1,22 +1,26 @@
 -- Business Rules 1
--- Definition : A store can only have a maximum of 50 products that are type 'alcohol'
--- Code
-CREATE FUNCTION fn_CheckAlcoholProduct()
-RETURNS INT
+-- Definition : no customer under the age of 21 can purchase any tobacco products.
+CREATE FUNCTION fn_tobaccolaw()
+RETURNS INT 
 AS
-    BEGIN
-        DECLARE @Ret INT = 0
-        IF EXISTS(SELECT SP.StoreID
-            FROM tblStoreProduct AS SP
-            JOIN tblProduct AS P ON SP.ProductID = P.ProductID
-            JOIN tblProductType AS PT ON P.ProductTypeID = PT.ProductTypeID
-            WHERE PT.ProductTypeName = 'alcohol'
-            GROUP BY SP.StoreID
-            HAVING COUNT(P.ProductID) > 50)
-        SET @Ret = 1
-        RETURN @Ret
-    END
-GO
-ALTER TABLE tblStoreProduct
-ADD CONSTRAINT CK_NoStoreOver50AlcoholType
-CHECK (dbo.fn_CheckAlcoholProduct() = 0);
+BEGIN 
+	DECLARE @RET INT = 0
+	IF EXISTS
+	(SELECT *
+	FROM tblCUSTOMER C
+	JOIN tblORDER O ON C.CUSTOMERID = O.CUSTOMERID 
+	JOIN tblORDERPRODUCT OP ON O.ORDERID = OP.ORDERID
+	JOIN tblPRODUCT P ON OP.PRODUCTID = P.PRODUCTID 
+	JOIN tblProductType PT ON P.ProductTypeID = PT.ProductTypeID
+
+	WHERE C.CustomerBirth > DATEADD(year, -21, getdate())
+	AND PT.ProductTypeName = 'tobacco'
+	)
+	SET @RET = 1
+	RETURN @RET 
+	END 
+	GO
+
+	ALTER TABLE tblORDERPRODUCT WITH NOCHECK
+	ADD CONSTRAINT ck_tobaccolaw
+	CHECK (dbo.fn_tobaccolaw() = 0)
