@@ -34,7 +34,7 @@ CREATE TABLE tblCustomer(
     CustomerState VARCHAR(20) NOT NULL,
     CustomerZipcode INT NOT NULL,
     CustomerEmail VARCHAR(50) NOT NULL,
-    CustoemrPhone INT
+    CustomerPhone VARCHAR(15)
 )
 
 --tblGender
