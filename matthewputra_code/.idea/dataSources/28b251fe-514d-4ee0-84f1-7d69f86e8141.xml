@@ -1425,6 +1425,7 @@
     </table>
     <table id="350" parent="324" name="tblCustomer">
       <ObjectId>1605580758</ObjectId>
+      <Outdated>1</Outdated>
       <CreatedTimestamp>2020-05-17.05:40:47.343</CreatedTimestamp>
       <ModifiedTimestamp>2020-05-17.08:44:56.210</ModifiedTimestamp>
     </table>
@@ -1475,6 +1476,7 @@
     </table>
     <table id="360" parent="324" name="tblOrder">
       <ObjectId>338100245</ObjectId>
+      <Outdated>1</Outdated>
       <CreatedTimestamp>2020-05-17.06:41:29.313</CreatedTimestamp>
       <ModifiedTimestamp>2020-05-17.07:56:41.080</ModifiedTimestamp>
     </table>
