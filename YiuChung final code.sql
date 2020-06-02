@@ -171,27 +171,45 @@ begin tran newOrder
 	values(@C_id, @OT_id, @orderDate)
 commit tran newOrder
 
+
 --COMPLEX QUERIES
 -- Sorts out the top 5 companies that has the most pharmecutical brands
-SELECT TOP 5 CompanyName, COUNT(*) AS NumberOfCompanyBrands 
+USE INFO330_PROJ_A13
+SELECT C.CompanyName, COUNT(*) AS NumberOfPharmBrands, NumOfProductsSold
 from tblBrand B 
 join tblCompany C on B.CompanyID = C.CompanyID
 JOIN tblProduct P on B.BrandID = P.BrandID 
 JOIN tblProductType PT on P.ProductTypeID = PT.ProductTypeID
+JOIN (SELECT C.CompanyID, C.CompanyName, SUM(StoreProductQuantity) AS NumOfProductsSold
+FROM tblCompany C
+JOIN tblBrand B ON C.CompanyID = B.CompanyID
+JOIN tblProduct P ON B.BrandID = P.BrandID
+JOIN tblStoreProduct SP ON P.ProductID = SP.ProductID
+JOIN tblStore S ON SP.StoreID = S.StoreID
+WHERE S.StoreName = 'COSTCO'
+GROUP BY C.CompanyID, C.CompanyName
+HAVING SUM(StoreProductQuantity) > 2000
+) as subq1 on C.CompanyID = subq1.CompanyID
 WHERE PT.ProductTypeName = 'pharmacy'
-GROUP BY C.CompanyName, C.CompanyID
+GROUP BY C.CompanyName, C.CompanyID, NumOfProductsSold
 HAVING COUNT(*) > 1
-ORDER BY NumberOfCompanyBrands DESC
+ORDER BY NumberOfPharmBrands DESC
 
 -- Finds male customers that spent over $3000 since 5/31/2019
-SELECT C.CustomerID, C.CustomerFname, C.CustomerLname, SUM(O.OrderPrice) AS total
+SELECT  S.StoreName, C.CustomerID, C.CustomerFname, C.CustomerLname, SUM(O.OrderPrice) AS total
 FROM tblCustomer C
 JOIN tblOrder O on C.CustomerID = O.CustomerID 
 JOIN tblGender G on C.GenderID = G.GenderID
+JOIN tblOrderProduct OP ON O.OrderID = OP.OrderID
+JOIN tblProduct P ON OP.ProductID = P.ProductID 
+JOIN tblStoreProduct SP ON P.ProductID = SP.ProductID
+JOIN tblStore S ON SP.StoreID = S.StoreID
 WHERE G.GenderName = 'Male'
-AND O.OrderDate > '5/31/2019'
-GROUP BY C.CustomerID, C.CustomerFname, C.CustomerLname
-Having SUM(O.OrderPrice) > 3000
+AND O.OrderDate > '1/1/2020'
+AND S.StoreName = 'COSTCO'
+GROUP BY S.StoreName, C.CustomerID, C.CustomerFname, C.CustomerLname
+Having SUM(O.OrderPrice) > 30
+ORDER BY total DESC
 
 
 
